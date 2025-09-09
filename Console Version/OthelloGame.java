@@ -86,7 +86,7 @@ public class OthelloGame{                                                       
          if(playerTurn % 2 == 1){                                                                                                            // If statement
                         
             System.out.printf("It is %s's turn\n\n", secondPlayer.getName());                                                                // Prints out to the user            
-            coordinatePossibilities = game.findPossibleCoordinates(secondPlayer.getLetterPiece(), firstPlayer.getLetterPiece());             // Call to Method finsPossibleCoordinates
+            coordinatePossibilities = game.findPossibleCoordinates(secondPlayer.getLetterPiece());                                           // Call to method findPossibleCoordinates
             placingPiece = secondPlayer.getLetterPiece();                                                                                    // Sets the value of placingPiece
             userInput = secondPlayer.getName();                                                                                              // Sets the value of userInput
             
@@ -94,7 +94,7 @@ public class OthelloGame{                                                       
          else{                                                                                                                               // Else statement
             
             System.out.printf("It is %s's turn\n\n", firstPlayer.getName());                                                                 // Prints out to the user
-            coordinatePossibilities = game.findPossibleCoordinates(firstPlayer.getLetterPiece(), secondPlayer.getLetterPiece());             // Call to Method finsPossibleCoordinates
+            coordinatePossibilities = game.findPossibleCoordinates(firstPlayer.getLetterPiece());                                            // Call to method findPossibleCoordinates
             placingPiece = firstPlayer.getLetterPiece();                                                                                     // Sets the value of placingPiece
             userInput = firstPlayer.getName();                                                                                               // Sets the value of userInput
          }
@@ -140,10 +140,10 @@ public class OthelloGame{                                                       
             
             
             if(playerTurn % 2 == 1){                                                                                                         // If statement
-               game.placePiece(userInput, secondPlayer.getLetterPiece(), firstPlayer.getLetterPiece());                                      // Call to Method placePiece
+               //game.placePiece(userInput, secondPlayer.getLetterPiece(), firstPlayer.getLetterPiece());                                      // Call to Method placePiece
             }
             else{                                                                                                                            // Else statement
-               game.placePiece(userInput, firstPlayer.getLetterPiece(), secondPlayer.getLetterPiece());                                      // Call to Method placePiece
+               //game.placePiece(userInput, firstPlayer.getLetterPiece(), secondPlayer.getLetterPiece());                                      // Call to Method placePiece
             }
          }
          else{                                                                                                                               // Else statement
